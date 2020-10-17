@@ -2,4 +2,75 @@ h3{
     text-align: center;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold';
     
+    
+}
+body{
+    background-color: rgba(red, green, blue, alpha);
+
+}
+
+
+.form-group{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 5px;
+   
+}
+.container{
+    
+    text-decoration: dashed;
+    position: absolute;
+    background-color:white;
+    height: 40em;
+    width: 25em;
+    margin-left: 50em;
+    
+    
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    
+}
+.row{
+   
+    position: absolute;
+    widows: 24px;
+    height: auto;
+    margin-top:15em
+}
+input  {
+    border-radius: 20px;
+    text-shadow: 1em;
+    font-family: hack;
+    text-align: center;
+    margin-top: 5px;
+    font-style: italic;
+    text-decoration: none;
+    width: 18em;
+    height: 2em;
+    margin-bottom: 20px;
+}
+ button{
+    position: absolute;
+    font-family: hack;
+    border-color: wheat;
+    margin-left: 4em;
+    border-radius: 1em;
+    
+
+    
+}
+.row > hr {
+
+    border-color: black;
+    width: 23em;
+    margin-left: 1em;
+
+} 
+
+form{
+    
+    position: absolute;
+    margin-left: em;
 }
