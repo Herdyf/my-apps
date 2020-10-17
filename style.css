@@ -9,11 +9,19 @@ body{
 
 }
 
+.navbar{
+    position: fixed;
+    width: 5em;
+    height: 100%;
+    border-radius: 5em;
+    
+    background-color: slateblue;
+    z-index: 1;
+}
+
 
 .form-group{
     position: relative;
-    width: fit-content;
-    height: fit-content;
     margin-top: 5px;
    
 }
@@ -22,7 +30,7 @@ body{
     text-decoration: dashed;
     position: absolute;
     background-color:white;
-    height: 40em;
+    height: 90%;
     width: 25em;
     margin-left: 50em;
     margin-top: 3em;
@@ -62,16 +70,10 @@ input  {
 
     
 }
-.row > hr {
 
-    border-color: black;
-    width: 23em;
-    margin-left: 1em;
-
-} 
 
 form{
     
     position: absolute;
-    margin-left: em;
+    margin-left: 5em;
 }
