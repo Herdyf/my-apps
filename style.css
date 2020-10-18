@@ -6,17 +6,42 @@ h3{
 }
 body{
     background-color:silver;
+    margin:0;
+    padding: 0;
 
+}
+ul{
+   
+    position: absolute;
+    width: 10px;
+    margin: 0;
+    padding: 0;
+    margin-left: 6px;
+    margin-top: 3em;
+    
+}
+li{
+    font-family: hack;
+    font-size: 2vh;
+    list-style: none;
+    margin-top: 5em;
+    background-color: whitesmoke;
+    width: 5em;
+    text-decoration: none;
+    display: block;
+    border-radius: 2em;
 }
 
 .navbar{
-    position: fixed;
+    position: absolute;
+    text-align: center;
     width: 5em;
-    height: 100%;
+    height: 20em;
     border-radius: 5em;
-    
-    background-color: slateblue;
-    z-index: 1;
+    margin-top: 6em;
+    background-color: black;
+   ;
+    margin-left: 3em;
 }
 
 
@@ -30,7 +55,7 @@ body{
     text-decoration: dashed;
     position: absolute;
     background-color:white;
-    height: 90%;
+    height: 35em;
     width: 25em;
     margin-left: 50em;
     margin-top: 3em;
@@ -43,10 +68,10 @@ body{
 }
 .row{
    
-    position: absolute;
+    position: relative;
     widows: 24px;
     height: auto;
-    margin-top:15em
+    margin-top:3em
 }
 input  {
     border-radius: 20px;
@@ -71,9 +96,26 @@ input  {
     
 }
 
+.row > .col > img{
+    width: 10em;
+    height: 10em;
+    position: relative;
+    border-radius: 10em;
+    
+}
+
+.col{
+    width: 100px;
+    height: 80px;
+    position: absolute;
+    margin-left: 8em;
+}
+
+
 
 form{
     
     position: absolute;
-    margin-left: 5em;
+    margin-top: 12em;
+    margin-left: 1em;
 }
