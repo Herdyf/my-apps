@@ -1,54 +1,129 @@
-h3{
-    text-align: center;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold';
-    
-    
+*{
+    margin:0;
+    padding: 0;
 }
 body{
     background-color:silver;
     margin:0;
     padding: 0;
+    overflow-x: hidden ;
+    font-family: 'Chilanka', cursive;
 
 }
-ul{
-   
-    position: absolute;
-    width: 10px;
-    margin: 0;
-    padding: 0;
-    margin-left: 6px;
-    margin-top: 3em;
-    
+
+
+nav{
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    /* padding: 20px 0; */
+    color: black;
+    height: 50px;
+    align-items: center;
 }
-li{
-    font-family: hack;
-    font-size: 2vh;
+nav ul {
+    display: flex;
     list-style: none;
-    margin-top: 5em;
-    background-color: whitesmoke;
-    width: 5em;
+    width: 40%;
+    justify-content: space-between;
+}
+nav ul a {
     text-decoration: none;
-    display: block;
-    border-radius: 2em;
+    font-size: 0,8;
+}
+nav ul li a:hover {
+     color: blanchedalmond;
 }
 
-.navbar{
+
+.menu-toggle {
+   display: none;
+   flex-direction: column;
+   height: 20px;
+   justify-content: space-between;
+   position: relative;
+}
+
+.menu-toggle input {
     position: absolute;
-    text-align: center;
-    width: 5em;
-    height: 20em;
-    border-radius: 5em;
-    margin-top: 6em;
-    background-color: black;
-   ;
-    margin-left: 3em;
+    width: 40px;
+    height: 28;
+    opacity: 0;
+    left: -5;
+    top: -3;
+    cursor: pointer;
+    z-index: 2;
 }
-
-
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: black;
+    border-radius: 3px;
+    transition: all 1s;
+}
 .form-group{
     position: relative;
     margin-top: 5px;
    
+}
+
+
+/* responsipe break poin */
+
+/* ukuran tablet */
+@media screen and (max-width: 768px) {
+    nav ul {
+        width: 50%;
+    }
+}
+/* ukuran ponsel */
+    @media screen and (max-width: 576px) {
+        .menu-toggle {
+           display: flex;
+        }
+        nav ul {
+            position: absolute;
+            flex-direction: column;
+            right: 0;
+            top: 0;
+            height: 100vh;
+            width: 50%;
+            justify-content: space-evenly;
+            align-items: center;
+            z-index: -1;
+            background-color: black;
+            transform: translateX(100%) ;
+            transition: all 1s;
+        }
+
+        nav ul.slide {
+            transform: translateX(0);
+        }
+    }
+
+
+
+.menu-toggle span:nth-child(2) {
+    /*  */
+    transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(4) {
+    /*  */
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+    background-color: rgb(15, 14, 11);
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+.menu-toggle input:checked ~ span:nth-child(4){
+    background-color: rgb(27, 19, 8);
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+.menu-toggle input:checked ~ span:nth-child(3){
+    opacity: 0;
+    transform: scale(0);
 }
 .container{
     
@@ -59,9 +134,6 @@ li{
     width: 25em;
     margin-left: 50em;
     margin-top: 3em;
-    
-    
-    justify-content: center;
     text-align: center;
     border-radius: 20px;
     
@@ -76,22 +148,20 @@ li{
 input  {
     border-radius: 20px;
     text-shadow: 1em;
-    font-family: hack;
     text-align: center;
     margin-top: 5px;
-    font-style: italic;
     text-decoration: none;
+    font-family: 'Chilanka', cursive;
     width: 18em;
     height: 2em;
     margin-bottom: 20px;
 }
  button{
     position: absolute;
-    font-family: hack;
     border-color: wheat;
     margin-left: 4em;
     border-radius: 1em;
-    
+    font-family: 'Chilanka', cursive;
 
     
 }
@@ -101,6 +171,9 @@ input  {
     height: 10em;
     position: relative;
     border-radius: 10em;
+    background-image:none;
+    border-image: auto !important ;
+    background-size: 0 !important;
     
 }
 
