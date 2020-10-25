@@ -5,26 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>welcome !</title>
+    <link rel="stylesheet" href="../nav.css">
     <link rel="stylesheet" href="../style.css">
     <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <nav>
-
-        <ul>
-            <li><a href="">login</a></li>
-            <li><a href="">register</a></li>
-        </ul>
-
-        <div class="menu-toggle">
-            <input type="checkbox" name="" id="" />
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
+    <?php require_once 'nav/navbar.php'; ?>
     <div class="container">
         <div class="row">
 

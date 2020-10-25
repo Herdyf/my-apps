@@ -1,0 +1,29 @@
+h5 {
+    font-size: 2em ;
+    text-decoration: none;
+    margin-top: 10vh;
+}
+.login input {
+   width: 200px;
+    height: 30px;
+    list-style: none;
+    margin-top: 15px;
+    font-family: unset;
+    text-align: center;
+    font-style: none;
+    
+
+
+}
+
+.login {
+    margin-top: 9em;
+    display: flex;
+    flex-direction: column;
+}
+
+.login button {
+    position: absolute;
+    margin-top: 110px;
+    width: 70px;
+}
