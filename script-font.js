@@ -17,7 +17,7 @@ $.ajax({
                             <div class="card-header">`+ data.category + `</div>
                             <div class="card-body">
                             <h5 class="card-title"  >` + data.family + `</h5>
-                        <p class="card-text" style=" font-family: `+ data.family + `, ` + data.category + `; script=` + data.subsets + ` font-weight: 400; font-style: normal; "  >Some quick example text to build on the card title and make up the bulk of
+                        <p class="card-text" style=" font-family: '`+ data.family + `'; script=` + data.subsets + ` font-weight: 400; font-style: normal; "  >Some quick example text to build on the card title and make up the bulk of
                             the card's
                             content.</p>
                     </div>
